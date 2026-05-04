@@ -1,0 +1,117 @@
+.about {}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.text p {
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  font-size: 0.975rem;
+}
+
+.text strong {
+  color: #38bdf8;
+}
+
+.details {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1.5rem;
+}
+
+.details li {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.details li span:first-child {
+  color: #38bdf8;
+  font-family: 'Cascadia Code', monospace;
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+.available {
+  color: #4ade80 !important;
+  font-weight: 500;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #1e2d45;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0a0f1e;
+  letter-spacing: 0.02em;
+}
+
+.stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.stat {
+  background: #0a0f1e;
+  border: 1px solid #1e2d45;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.stat span {
+  font-size: 0.7rem;
+  color: #64748b;
+  line-height: 1.3;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .details {
+    grid-template-columns: 1fr;
+  }
+}

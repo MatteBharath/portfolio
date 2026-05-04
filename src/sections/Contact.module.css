@@ -1,0 +1,80 @@
+.contact {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  color: #e2e8f0;
+}
+
+.heading span {
+  color: #38bdf8;
+}
+
+.sub {
+  max-width: 520px;
+  margin: 0 auto 2.5rem;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+  margin-bottom: 3.5rem;
+}
+
+.btn:hover {
+  background: rgba(56, 189, 248, 0.08);
+  transform: translateY(-2px);
+  color: #38bdf8;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #38bdf8;
+}
+
+.footer {
+  border-top: 1px solid #1e2d45;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  color: #4a5568;
+  font-family: 'Cascadia Code', monospace;
+}
+
+.footer span {
+  color: #38bdf8;
+}

@@ -1,0 +1,60 @@
+.skills {}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #1e2d45;
+  border-radius: 14px;
+  padding: 1.75rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  transform: translateY(-2px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.catTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillTag {
+  font-size: 0.75rem;
+  font-family: 'Cascadia Code', 'Fira Code', monospace;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(56, 189, 248, 0.08);
+  color: #94a3b8;
+  border: 1px solid #1e2d45;
+  transition: background 0.2s, color 0.2s;
+}
+
+.skillTag:hover {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}

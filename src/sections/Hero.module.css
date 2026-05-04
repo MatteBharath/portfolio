@@ -1,0 +1,94 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 80px;
+}
+
+.glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56,189,248,0.06) 0%, transparent 70%);
+  top: -100px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.greeting {
+  font-family: 'Cascadia Code', 'Fira Code', monospace;
+  color: #38bdf8;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.name {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 800;
+  color: #e2e8f0;
+  line-height: 1.05;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
+  max-width: 540px;
+  color: #94a3b8;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.bio span {
+  color: #38bdf8;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  padding: 0.8rem 2rem;
+  background: #38bdf8;
+  color: #0a0f1e;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: opacity 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+
+.btnPrimary:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+  color: #0a0f1e;
+}
+
+.btnOutline {
+  padding: 0.8rem 2rem;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+
+.btnOutline:hover {
+  background: rgba(56, 189, 248, 0.08);
+  transform: translateY(-1px);
+  color: #38bdf8;
+}
