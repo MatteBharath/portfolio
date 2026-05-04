@@ -1,5 +1,33 @@
 .about {}
 
+.languages {
+  margin-top: 1.75rem;
+}
+
+.langLabel {
+  font-size: 0.75rem;
+  font-family: 'Cascadia Code', monospace;
+  color: #38bdf8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.langList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.langTag {
+  font-size: 0.8rem;
+  padding: 4px 14px;
+  border-radius: 20px;
+  border: 1px solid #1e2d45;
+  color: #94a3b8;
+  background: #111827;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 340px;

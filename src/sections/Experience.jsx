@@ -6,7 +6,7 @@ const jobs = [
     id: 'fio',
     company: 'FIO Labs Pvt Ltd',
     role: 'Full Stack Developer',
-    period: 'May 2024 – Present',
+    period: 'May 2025 – Present',
     type: 'Full-time',
     highlights: [
       'Built a multi-role purchase request review system (buyer, supplier, tenant admin) with role-based phase routing, event sourcing for audit trails, and real-time status tracking across 20+ lifecycle states.',

@@ -34,6 +34,15 @@ function About() {
               <li><span>Phone</span> +91 8317618853</li>
               <li><span>Available</span> <span className={styles.available}>Open to opportunities</span></li>
             </ul>
+
+            <div className={styles.languages}>
+              <p className={styles.langLabel}>Languages</p>
+              <div className={styles.langList}>
+                {['English', 'Telugu', 'Hindi', 'Kannada'].map(lang => (
+                  <span key={lang} className={styles.langTag}>{lang}</span>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className={styles.card}>
@@ -48,8 +57,8 @@ function About() {
                 <span>Lifecycle States Shipped</span>
               </div>
               <div className={styles.stat}>
-                <strong>3</strong>
-                <span>Languages (EN/DE/ES)</span>
+                <strong>4</strong>
+                <span>Spoken Languages</span>
               </div>
               <div className={styles.stat}>
                 <strong>2</strong>
