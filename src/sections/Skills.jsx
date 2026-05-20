@@ -41,9 +41,9 @@ const categories = [
 
 function Skills() {
   return (
-    <section id="skills" className={`section ${styles.skills}`}>
+    <section id="skills" className={`section ${styles.skills} reveal`}>
       <div className="container">
-        <p className="section-label">03. what I use</p>
+        <p className="section-label">03. what powers the 5D view</p>
         <h2 className="section-title">Tech <span>Stack</span></h2>
 
         <div className={styles.grid}>

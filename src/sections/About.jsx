@@ -3,9 +3,9 @@ import styles from './About.module.css';
 
 function About() {
   return (
-    <section id="about" className={`section ${styles.about}`}>
+    <section id="about" className={`section ${styles.about} reveal`}>
       <div className="container">
-        <p className="section-label">01. about me</p>
+        <p className="section-label">01. about my 5D view</p>
         <h2 className="section-title">Who I <span>Am</span></h2>
 
         <div className={styles.grid}>
@@ -24,8 +24,8 @@ function About() {
             </p>
             <p>
               I care deeply about clean architecture, maintainable code, and
-              collaborating closely with product and design to deliver great user
-              experiences.
+              collaborating closely with product and design to deliver polished 5D
+              portfolio experiences with real business impact.
             </p>
             <ul className={styles.details}>
               <li><span>Name</span> Matte Bharath</li>

@@ -5,22 +5,25 @@
 }
 
 :root {
-  --bg: #0a0f1e;
-  --bg-card: #111827;
-  --bg-card-hover: #1a2335;
-  --border: #1e2d45;
+  --bg: #060b17;
+  --bg-alt: #091021;
+  --bg-card: rgba(15, 23, 42, 0.86);
+  --bg-card-strong: rgba(10, 15, 30, 0.95);
+  --border: rgba(56, 189, 248, 0.18);
   --accent: #38bdf8;
+  --accent-strong: #67e8f9;
   --accent-dim: rgba(56, 189, 248, 0.12);
   --text: #e2e8f0;
-  --text-muted: #64748b;
-  --text-secondary: #94a3b8;
+  --text-muted: #94a3b8;
+  --text-secondary: #7c97b3;
   --green: #4ade80;
-  --radius: 8px;
-  --radius-lg: 16px;
+  --radius: 16px;
+  --radius-lg: 28px;
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
-  --shadow: 0 4px 24px rgba(0,0,0,0.4);
-  --transition: 0.2s ease;
+  --shadow: 0 24px 90px rgba(0, 0, 0, 0.35);
+  --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.22);
+  --transition: 0.25s ease;
 }
 
 html {
@@ -29,10 +32,24 @@ html {
 
 body {
   font-family: var(--font);
-  background-color: var(--bg);
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 25%),
+    radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.08), transparent 20%),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
+  min-height: 100vh;
   overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 120px 120px;
+  pointer-events: none;
+  opacity: 0.36;
 }
 
 a {
@@ -51,37 +68,103 @@ h1, h2, h3, h4 {
   padding: 0 2rem;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .section {
+  position: relative;
   padding: 96px 0;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 32px;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(140deg, rgba(56, 189, 248, 0.08), rgba(167, 139, 250, 0.06));
+  filter: blur(32px);
+  opacity: 0.42;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.05), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.05), transparent 18%);
+  z-index: -1;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3vw, 3.1rem);
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 96px;
+  height: 5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.08), rgba(56, 189, 248, 0.85), rgba(56, 189, 248, 0.08));
 }
 
 .section-label {
   font-size: 0.75rem;
   font-family: var(--mono);
   color: var(--accent);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
+  font-size: clamp(2rem, 3vw, 3.1rem);
+  font-weight: 800;
+  margin-bottom: 2.5rem;
   color: var(--text);
+  letter-spacing: -0.03em;
 }
 
 .section-title span {
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .tag {
   display: inline-block;
   font-size: 0.75rem;
   font-family: var(--mono);
-  padding: 3px 10px;
-  border-radius: 4px;
-  background: var(--accent-dim);
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
   color: var(--accent);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
 }

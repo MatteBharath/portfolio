@@ -34,9 +34,9 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className={`section ${styles.projects}`}>
+    <section id="projects" className={`section ${styles.projects} reveal`}>
       <div className="container">
-        <p className="section-label">04. what I've built</p>
+        <p className="section-label">04. featured 5D projects</p>
         <h2 className="section-title">Featured <span>Projects</span></h2>
 
         <div className={styles.grid}>

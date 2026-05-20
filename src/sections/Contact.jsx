@@ -3,13 +3,14 @@ import styles from './Contact.module.css';
 
 function Contact() {
   return (
-    <section id="contact" className={`section ${styles.contact}`}>
+    <section id="contact" className={`section ${styles.contact} reveal`}>
       <div className="container">
-        <p className="section-label">05. what's next</p>
+        <p className="section-label">05. let's build your 5D view</p>
         <h2 className={styles.heading}>Get In <span>Touch</span></h2>
         <p className={styles.sub}>
           I'm currently open to new opportunities. Whether you have a question,
-          a project idea, or just want to say hi — my inbox is always open.
+          a project idea, or just want to say hi — my inbox is always open to
+          building your next immersive 5D experience.
         </p>
 
         <a

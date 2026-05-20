@@ -6,9 +6,12 @@ import Experience from './sections/Experience';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
+import useScrollReveal from './hooks/useScrollReveal';
 import './styles/index.css';
 
 function App() {
+  useScrollReveal();
+
   return (
     <>
       <Navbar />
