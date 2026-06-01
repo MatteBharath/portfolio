@@ -5,7 +5,7 @@ function About() {
   return (
     <section id="about" className={`section ${styles.about} reveal`}>
       <div className="container">
-        <p className="section-label">01. about my 5D view</p>
+        <p className="section-label">01. about my work</p>
         <h2 className="section-title">Who I <span>Am</span></h2>
 
         <div className={styles.grid}>
@@ -24,8 +24,8 @@ function About() {
             </p>
             <p>
               I care deeply about clean architecture, maintainable code, and
-              collaborating closely with product and design to deliver polished 5D
-              portfolio experiences with real business impact.
+              collaborating closely with product and design to deliver polished
+              product experiences with real business impact.
             </p>
             <ul className={styles.details}>
               <li><span>Name</span> Matte Bharath</li>

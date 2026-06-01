@@ -46,7 +46,7 @@ function Experience() {
   return (
     <section id="experience" className={`section ${styles.experience} reveal`}>
       <div className="container">
-        <p className="section-label">02. 5D delivery</p>
+        <p className="section-label">02. delivery</p>
         <h2 className="section-title">Work <span>Experience</span></h2>
 
         <div className={styles.layout}>

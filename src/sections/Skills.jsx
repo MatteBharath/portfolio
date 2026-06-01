@@ -43,7 +43,7 @@ function Skills() {
   return (
     <section id="skills" className={`section ${styles.skills} reveal`}>
       <div className="container">
-        <p className="section-label">03. what powers the 5D view</p>
+        <p className="section-label">03. what powers this work</p>
         <h2 className="section-title">Tech <span>Stack</span></h2>
 
         <div className={styles.grid}>

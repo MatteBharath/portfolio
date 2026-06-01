@@ -5,12 +5,12 @@ function Contact() {
   return (
     <section id="contact" className={`section ${styles.contact} reveal`}>
       <div className="container">
-        <p className="section-label">05. let's build your 5D view</p>
+        <p className="section-label">05. let's build your next project</p>
         <h2 className={styles.heading}>Get In <span>Touch</span></h2>
         <p className={styles.sub}>
           I'm currently open to new opportunities. Whether you have a question,
           a project idea, or just want to say hi — my inbox is always open to
-          building your next immersive 5D experience.
+          building your next immersive experience.
         </p>
 
         <a
