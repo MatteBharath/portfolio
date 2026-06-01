@@ -10,17 +10,17 @@ function Hero() {
           <div className={styles.left}>
             <p className={styles.greeting}>Hi, my name is</p>
             <h1 className={styles.name}>Matte Bharath.</h1>
-            <h2 className={styles.title}>I design immersive portfolio experiences.</h2>
+            <h2 className={styles.title}>I build things for the web.</h2>
             <p className={styles.bio}>
-              Full-stack developer with 2 years of experience creating production-ready,
-              immersive portfolio interfaces that feel dimensional, polished, and modern.
-              I bring together <span>React</span>, <span>TypeScript</span>,{' '}
-              <span>Spring Boot</span>, and event-driven architecture to build elegant
-              web experiences.
+              Full-stack developer with 2 years of experience building production-grade
+              web applications across frontend and backend. I work with{' '}
+              <span>React</span>, <span>TypeScript</span>,{' '}
+              <span>Spring Boot</span>, and event-driven microservices to deliver
+              clean, scalable solutions.
             </p>
             <div className={styles.actions}>
               <a href="#projects" className={styles.btnPrimary}>Explore Company Work</a>
-              <a href="mailto:bharathmatte2707@gmail.com" className={styles.btnOutline}>
+              <a href="mailto:bharath.matte.b@gmail.com" className={styles.btnOutline}>
                 Let&apos;s Talk
               </a>
             </div>

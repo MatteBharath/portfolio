@@ -29,8 +29,8 @@ function About() {
             </p>
             <ul className={styles.details}>
               <li><span>Name</span> Matte Bharath</li>
-              <li><span>Location</span> Bangalore, 560093</li>
-              <li><span>Email</span> bharathmatte2707@gmail.com</li>
+              <li><span>Location</span> Bangalore, 560085</li>
+              <li><span>Email</span> bharath.matte.b@gmail.com</li>
               <li><span>Phone</span> +91 8317618853</li>
               <li><span>Available</span> <span className={styles.available}>Open to opportunities</span></li>
             </ul>

@@ -7,7 +7,7 @@ const categories = [
     icon: '🖥',
     skills: [
       'React.js', 'TypeScript', 'JavaScript (ES6+)',
-      'HTML5', 'CSS3', 'Tailwind CSS',
+      'Next.js', 'HTML5', 'CSS3', 'Tailwind CSS',
       'Material-UI', 'EUI', 'i18next', 'C3.js', 'Google Maps API',
     ],
   },
@@ -15,26 +15,39 @@ const categories = [
     title: 'Backend',
     icon: '⚙️',
     skills: [
-      'Spring Boot', 'Java', 'Node.js',
+      'Spring Boot', 'Java', 'Node.js', 'FastAPI',
       'Apache Kafka', 'Spring Cloud Stream',
       'Hibernate / JPA', 'REST APIs',
-      'OpenAPI 3.0', 'CQRS',
+      'OpenAPI 3.0', 'CQRS', 'Microservices',
+      'Pydantic', 'Multipart file upload',
+    ],
+  },
+  {
+    title: 'AI / LLM',
+    icon: '🤖',
+    skills: [
+      'OpenAI GPT-4o (Vision)', 'Prompt Engineering',
+      'Structured Output / JSON Schema', 'LangGraph',
+      'Human-in-the-loop AI', 'IDP',
+      'Claude (Anthropic)', 'Cursor AI', 'OpenAI Codex',
     ],
   },
   {
     title: 'Database',
     icon: '🗄',
     skills: [
-      'PostgreSQL', 'MongoDB', 'Firebase Realtime Database',
+      'PostgreSQL', 'MongoDB',
+      'Firebase Realtime Database', 'Redis',
     ],
   },
   {
     title: 'Tools & Practices',
     icon: '🛠',
     skills: [
-      'Git', 'Docker', 'Postman',
+      'Git', 'CI/CD', 'GitHub Actions',
+      'Docker / Docker Compose', 'Uvicorn (ASGI)', 'Postman',
       'Agile / Scrum', 'Multi-tenant SaaS',
-      'DLQ / Retry patterns', 'Event Sourcing',
+      'DLQ / Retry patterns', 'Session management',
     ],
   },
 ];

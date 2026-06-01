@@ -9,12 +9,11 @@ function Contact() {
         <h2 className={styles.heading}>Get In <span>Touch</span></h2>
         <p className={styles.sub}>
           I'm currently open to new opportunities. Whether you have a question,
-          a project idea, or just want to say hi — my inbox is always open to
-          building your next immersive experience.
+          a project idea, or just want to say hi — my inbox is always open.
         </p>
 
         <a
-          href="mailto:bharathmatte2707@gmail.com"
+          href="mailto:bharath.matte.b@gmail.com"
           className={styles.btn}
         >
           Say Hello
@@ -22,7 +21,7 @@ function Contact() {
 
         <div className={styles.links}>
           <a
-            href="mailto:bharathmatte2707@gmail.com"
+            href="mailto:bharath.matte.b@gmail.com"
             className={styles.link}
             aria-label="Email"
           >
@@ -30,7 +29,7 @@ function Contact() {
               <rect x="2" y="4" width="20" height="16" rx="2"/>
               <path d="M2 7l10 7 10-7"/>
             </svg>
-            bharathmatte2707@gmail.com
+            bharath.matte.b@gmail.com
           </a>
           <a href="tel:+918317618853" className={styles.link} aria-label="Phone">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
